@@ -1,5 +1,5 @@
 body {
-    background-color: #dbd5dc;
+    background-color: #fff;
     padding: 0;
     margin: 0;
     font-family: 'Sen', sans-serif;
@@ -39,22 +39,13 @@ body {
     text-transform: uppercase;
 }
 
-
-/* Add an active class to highlight the current page */
-/*.active {*/
-/*    !*background-color: #04AA6D;*!*/
-/*    color: white;*/
-/*}*/
-
 /* Hide the link that should open and close the topnav on small screens */
 
 .topnav .menu-btn {
     display: none;
 }
 
-
-
-/* Add a dark background on topnav links and the dropdown button on hover */
+/* change on hover */
 .topnav a:hover {
     color: #A9888D;
 
@@ -79,35 +70,17 @@ body {
         float: right;
         display: block;
     }
-
-    /*.top-image {*/
-    /*    position: absolute;*/
-    /*    top: 25%;*/
-    /*    left: 0;*/
-    /*}*/
     h1 {
-        max-width: 300px;
-        font-size: 28px;
-        position: absolute;
-        left: 5%;
-        top: 10%;
+        font-size: 40px;
+        font-family: 'Sen', sans-serif;
+        text-transform: uppercase;
     }
-    button {
-        position: absolute;
-        left: 18%;
-        top: 91%;
+  
+    p {
+        font-size: 18px;
     }
-    .back-images {
-        flex-direction: column;
-    }
-
-    /*.back-img-lt,*/
-    /*.back-img-rt{*/
-    /*    display: none;*/
-    /*}*/
-    .top-image,
-    .back-img-lt{
-        display: none;
+    .resource-info, .faq {
+        padding: 30px;
     }
 
 }
@@ -144,12 +117,6 @@ body {
         display: none;
     }
 
-    .hide.hidden {
-        display:none;
-    }
-
-
-
 }
 
 
@@ -183,111 +150,124 @@ body {
 
 /**/
 main {
-    overflow: hidden;
-}
+        overflow: hidden;
+    }
 
-.back-images {
-    position: relative;
-    overflow: hidden;
+.color-block {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    background-color: #ced3d0;
+    width: 100%;
+    height: 230px;
 }
 
-.back-images img {
-    max-width: 100%;
-    /*height: auto;*/
+h3 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Sen', sans-serif;
 }
 
+.mid-text, .top-text-two, .words{
+    text-align: center;
+}
 
-.top-image {
-
-    max-width: 100%;
-    /*height: auto;*/
-    z-index: 10;
-    /*position: absolute;*/
-    /*top: 259px;*/
-    /*left: 30%;*/
+p {
+    font-size: 28px;
+}
+.resource-info,
+.faq {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+}
+footer {
+    background-color: #ECE5E6;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 
 }
 
-/*h1 {*/
-/*    max-width: 550px;*/
-/*    font-size: 39px;*/
-/*    !*position: absolute;*!*/
-/*    !*left: 15%;*!*/
-/*    !*top: 75%;*!*/
-
-/*}*/
+footer p {
+    width: 275px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
 
 button {
-    background:  #9DA6A0;
-    color: #fff;
-    border: none;
-    border-radius: 25px;
-    width: 218px;
-    padding: 15px 50px;
-    /*position: absolute;*/
-    /*left: 65%;*/
-    /*top: 90%;*/
-
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 0;
+    padding: 10px 15px;
 }
-@media screen and (max-width: 1024px) and (min-width: 700px) {
-    .top-image {
-        position: absolute;
-        top: 25%;
-        left: 13%;
-    }
-    h1 {
-        max-width: 500px;
-        font-size: 39px;
-        position: absolute;
-        left: 15%;
-        top: 75%;
-    }
-    button {
-        position: absolute;
-        left: 66%;
-        top: 93%;
-    }
+input {
+    padding: 9px;
+    width: 275px;
+    margin-right: -5px;
 }
 
-@media screen and (max-width: 1400px) and (min-width: 1024px) {
-    .top-image {
-        position: absolute;
-        top: 259px;
-        left: 25%;
-    }
-    h1 {
-        max-width: 550px;
-        font-size: 39px;
-        position: absolute;
-        left: 15%;
-        top: 75%;
-    }
-    button {
-        position: absolute;
-        left: 66%;
-        top: 93%;
-    }
+footer a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    color: #2B2B2B;
 }
 
-@media screen and (min-width: 1400px) {
-    .top-image {
-        position: absolute;
-        top: 259px;
-        left: 30%;
-    }
-    h1 {
-        max-width: 550px;
-        font-size: 39px;
-        position: absolute;
-        left: 15%;
-        top: 80%;
-    }
-    button {
-        position: absolute;
-        left: 65%;
-        top: 90%;
-    }
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+}
+
+small {
+    width: 75%;
+    margin: 0 auto;
+}
+
+div{
+  text-align: center;
+}
+
+.centered, .words{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-text-two{
+  background-color:#ECE5E6;
+  padding: 70px;
+}
+
+hr::after {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.row{
+  display: flex;
+  width: 50%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-around
+}
+
+.now{
+  background-color: #ECE5E6;
+}
+
+.mid-text{
+  float: center;
+  margin-top: 600px;
+  margin-bottom: 600px;
 }
