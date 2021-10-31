@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Skincare App - Recommendations</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="recommendations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet">
@@ -16,16 +16,16 @@
 <!-- Nav -->
 <header>
     <nav class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#">Ingredients</a>
-        <a href="#">Products</a>
-        <a href="#">Learn</a>
+        <a href="index.html">Home</a>
+        <a href="404.html">Ingredients</a>
+        <a href="recommendations.html">Products</a>
+        <a href="learn.html">Learn</a>
         <img class="logo" src="images/logo.svg">
-        <a href="#">Resources</a>
-        <a href="#">Our Story</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">Our Story</a>
 
         <a class="icon" href="#"><img src="images/search-icon.svg"></a>
-        <a class="icon" href="#"><img src="images/profile-icon.svg"></a>
+        <a class="icon" href="login.html"><img src="images/profile-icon.svg"></a>
 
         <a href="javascript:void(0);" class="menu-btn" onclick="myFunction()">
             <div class="btn-line"></div>
@@ -35,64 +35,130 @@
     </nav>
 </header>
 <main>
-    <div class="top-text">
-      <h1 class="top-text-two"> RECOMMENDATIONS <hr> </h1>
-    </div>
-    <center>
-    <div class="row">
-      <div class="content">
-        <img class="back-img-lt" src="cleansers_b 1.svg"> 
-           <h2>CLEANSER</h2>
-            </div>
-            
-      <div class="content">
-      <img class="top-image" src="cream 1.svg">
-         <h2>MOISTURIZER</h2>
-      </div>
-
-        <div class="content">
-        <img class="back-img-rt"src="SCRUB_B 1.svg">
-          <h2>EXFOLIANTS</h2>
-            </div>
-
-      <div class="content">
-      <img class="bottom-image" src="SERUM_A 1.svg">
-          <h2>SERUMS</h2>
-        </div>
-   
-    </div>
-    <div>
-    </div>
-    <div class= "mid-text">
-    <h1 class="mid-text-two">CLEANSERS</h1>
-    </div>
-
-
-    <div class="mid-text">
-    <h1 class="mid-text-two">MOISTURIZERS</h1>
-    </div>
-
-    <div class="mid-text">
-    <h1 class="mid-text-two">EXFOLIANTS</h1>
-    </div>
-
-    <div class="mid-text">
-    <h1 class="mid-text-two">SERUMS</h1>
-    </div>
-
-    <div class="mid-text">
-    <h1 class="mid-text-two">Some of our favorite products</h1>
-    </div>
-
-    <div class="mid-text">
-    <h1 class="mid-text-two">Stay Updated</h1>
-    <p>signup to get monthly skincare recommendations to your inbox.
-    </p>
-    <input class= "inputnow" type="text" placeholder="Search..">
+    <div class="color-block">
+      <h1> RECOMMENDATIONS<hr> </h1>
     </div>
     
+    <div class="table1">
+      <table>
+        <tr>
+        <td><div class="box"><img src="cleansers_b 1.svg"><div class="text"><h2>CLEANSER</h2></div></div></td>
+        <td><div class="box"><img src="cream 1.svg"><div class="text"><h2>MOISTURIZER</h2></div></div></td>
+        </tr>
+        <tr>
+        <td><div class="box"><img src="SCRUB_B 1.svg"><div class="text"><h2>EXFOLIANTS</h2></div></div></td>
+        <td><div class="box"><img src="SERUM_A 1.svg"><div class="text"><h2>SERUMS</h2></div></div></td>
+        </tr>
+      </table>
+    </div>
+      
+    <div class= "mid-text">
+    <h1 class="mid-text-two">CLEANSERS<hr></h1>
+    </div>
+    <div class="container1">
+      <table>
+       <tr>
+        <td><a onclick="plusSlides(-1)" class="carousel_button carousel_button--left"><img src="Vector (1).svg" alt="left_button"></a></td>
+        <td class="mySlides fade"><img class=" small" src="cleanser_1.JPG" width="300px"></td>
+        <td class="mySlides fade"><img class=" small" src="cleanser_2.JPG" width="300px"></td>
+        <td class="mySlides fade"><img class=" small" src="cleanser_3.JPG" width="300px"></td>
+        <td><a onclick="plusSlides(1)" class="carousel_button carousel_button--right"><img src="Vector.svg" alt="right_button"></a></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="mid-text">
+    <h1 class="mid-text-two">MOISTURIZERS<hr></h1>
+    </div>
+    <div class="container1">
+    <table>
+        <tr>
+        <td><a onclick="plusSlides(-1)" class="carousel_button carousel_button--left"><img src="Vector (1).svg" alt="left_button"></a></td>
+        <td class="mySlides fade"><img class=" small" src="moisturizer_one.JPG" width="300px"></td>
+        <td class="mySlides fade"><img class=" small" src="moisturizer_2.JPG" width="300px"></td>
+        <td class="mySlides fade"><img class=" small" src="moisturizer_1.JPG" width="300px"></td>
+        <td><a onclick="plusSlides(1)" class="carousel_button carousel_button--right"><img src="Vector.svg" alt="right_button"></a></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="mid-text">
+    <h1 class="mid-text-two">EXFOLIANTS<hr></h1>
+    </div>
+     <div class="container1">
+      <table>
+        <tr>
+        <td><a onclick="plusSlides(-1)" class="carousel_button carousel_button--left"><img src="Vector (1).svg" alt="left_button"></a></td>
+        <td class="mySlides fade"><img class=" small" src="exfloliate_1.JPG" width="300px"></td>
+        <td class="mySlides fade"><img class=" small" src="exfloliate_2.JPG" width="300px"></td>
+        <td class="mySlides fade"><img class=" small" src="exfloliate_3.JPG" width="300px"></td>
+        <td><a onclick="plusSlides(1)" class="carousel_button carousel_button--right"><img src="Vector.svg" alt="right_button"></a></td>
+        </tr>
+      </table>
+    </div>
+    
+    
+    
+    <div class="mid-text">
+    <h1 class="mid-text-two">SERUMS<hr></h1>
+    </div>
+     <div class="container1">
+    <table>
+        <tr>
+        <td><a onclick="plusSlides(-1)" class="carousel_button carousel_button--left"><img src="Vector (1).svg" alt="left_button"></a></td>
+        <td class="mySlides fade"><img class=" small" src="Serum_1.JPG" width="300px"></td>
+        <td class="mySlides fade"><img class=" small" src="Serum_2.JPG" width="300px"></td>
+        <td class="mySlides fade"><img class=" small" src="Serum_3.JPG" width="300px"></td>
+        <td><a onclick="plusSlides(1)" class="carousel_button carousel_button--right"><img src="Vector.svg" alt="right_button"></a></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="container2">
+      <h1 class="mid-text-two" id="blue">Some of our favorite products</h1>
+     <table>
+        <tr>
+        <td><button class="carousel_button carousel_button--left"><img src="Vector (1).svg" alt="left_button"> </button> </td>
+        <td><img src="footer_photo.JPG"></td>
+        <td><button class="carousel_button carousel_button--right"><img src="Vector.svg" alt="right_button"> </button></button></td>
+        </tr>
+        </tr>
+      </table>
+    </div>
+    </div>
+  </div>
 </main>
+
+
+<footer>
+  <h3 class="footer3">Stay Updated</h3>
+  <p class="footer4">sign up to get monthly skincare
+    recommendations to your inbox</p>
+  <div>
+    <input type="text" placeholder="email address">
+    <button><img src="images/arrowbutton.svg" height="10px"></button>
+  </div>
+  <nav class="footer-nav">
+  <a href="about.html">About Us</a>
+  <a href="#">Our Curation Process</a>
+  <a href="#">Press</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="#">Careers</a>
+  <a href="#">Newsletter</a>
+  </nav>
+  <small>DISCLAIMER: THIS WEBSITE DOES NOT PROVIDE MEDICAL ADVICE
+    The information, including but not limited to, text, graphics,
+    images and other material contained on this website are for informational purposes only.
+    No material on this site is intended to be a substitute for professional medical advice,
+    diagnosis or treatment. Always seek the advice of your physician or other qualified health
+    care provider with any questions you may have regarding a medical condition or treatment
+    and before undertaking a new health care regimen, and never disregard professional medical
+    advice or delay in seeking it because of something you have read on this website.</small>
+</footer>
 <script src="menu.js" ></script>
-<script src="script.js"></script>
+<script src="recommendations.js"></script>
 </body>
 </html>
+
+
